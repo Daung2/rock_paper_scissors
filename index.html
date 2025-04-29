@@ -4,15 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <select id="humanChoice">
-        <option value="none">....</option>
-        <option value="Rock">Rock</option>
-        <option value="Paper">Paper</option>
-        <option value="Scissors">Scissors</option>
-    </select>
-    <button onclick="playGame()">Submit</button>
+    <div class="rpsGame">
+        <h1>Rock Paper Scissor Game!!!</h1>
+        <div id="scores">
+            <h2 id="humanScore">HumanScore: 0</h2>
+            <button id="restart" class="restart" onclick="restart()">Restart</button>
+            <h2 id="computerScore">ComputerScore: 0</h2>
+        </div>
+        <h1 id="winner" class="winner">Good Luck!</h1>
+        <div id="humanChoice" class="humanChoice">
+            <a><img id="rock" src="hand-rock-solid-svgrepo-com.svg" alt="rock"></a>
+            <a  ><img id="paper" src="hand-paper-solid-svgrepo-com.svg" alt="paper"></a>
+            <a><img id="scissors" src="hand-scissors-solid-svgrepo-com.svg" alt="scissors"></a>
+        </div>
+    </div>
+    
+    <!-- <button onclick="playGame()">Submit</button> -->
     <script src="script.js"></script>
 </body>
 </html>
